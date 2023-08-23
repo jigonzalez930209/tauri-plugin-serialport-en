@@ -33,7 +33,7 @@ jobs:
           command: 'version-or-publish'
           createRelease: true
 
-      - name: Create Pull Request With Versions Bumped
+      - name: Create Pull Request With Versions Bumped 
         if: steps.covector.outputs.commandRan == 'version'
         uses: tauri-apps/create-pull-request@v3.4.1
         with:
